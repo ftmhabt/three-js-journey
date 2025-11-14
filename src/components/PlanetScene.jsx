@@ -1,5 +1,6 @@
 import { Canvas } from "@react-three/fiber";
-import RotatingPlanet from "./RotatingPlanet";
+import Inspector from "./Inspector";
+import Planet from "./Planet";
 import RotatingStars from "./RotatingStars";
 
 export default function PlanetScene() {
@@ -13,7 +14,9 @@ export default function PlanetScene() {
 
         <RotatingStars speed={0.0005} />
 
-        <RotatingPlanet />
+        <Inspector>
+          <Planet />
+        </Inspector>
       </Canvas>
     </div>
   );
